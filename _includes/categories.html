@@ -1,17 +1,38 @@
 <div class="col s12 cat-div">
   <div class="cat-list">
-    {% for cat in site.categories %}
+    <h5>TX Platforms</h5>
+    {% for cat in site.tags %}
     {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
     {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
     <a class="cat-chip" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
+    <!-- <script> var tx_str = {{cat[0]}}; </script> -->
     {% endfor %}
   </div>
   <div class="divider"></div>
-  <div class="cat-index">
+  <div class="cat-list">
+    <h5>RX Platforms</h5>
     {% for cat in site.categories %}
     {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
     {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <h4 id="{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}">{{cat[0]}}</h4>
+    <a class="cat-chip2" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
+    {% endfor %}
+  </div>
+  <div class="divider"></div>
+
+<!-- <div class="container">
+<iframe  title="Android-Android testing" width="480" height="390" src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/view?usp=sharing"></iframe>
+</div> -->
+<div class="video-container">
+    <iframe src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/preview" width="640" height="480">
+    </iframe>
+</div>
+
+  <div class="cat-index">
+    <h4>Data Collection Platforms</h4>
+    {% for cat in site.tags %}
+    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
+    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
+    
     <ul class="cat-post">
       {% for post in cat[1] %}
       <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
