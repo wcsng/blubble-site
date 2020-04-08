@@ -1,48 +1,123 @@
 <div class="col s12 cat-div">
-  <div class="cat-list">
-    <h5>TX Platforms</h5>
-    {% for cat in site.tags %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <a class="cat-chip" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
-    <!-- <script> var tx_str = {{cat[0]}}; </script> -->
-    {% endfor %}
-  </div>
-  <div class="divider"></div>
-  <div class="cat-list">
-    <h5>RX Platforms</h5>
-    {% for cat in site.categories %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <a class="cat-chip2" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
-    {% endfor %}
-  </div>
+  <h4>Transmitter Device</h4>
+    <input type="checkbox" id="android_tx" name="android_tx" value="android_tx" onchange="toggle_tx_android()">
+    <label for="android_tx"> Android</label><br>
+    <input type="checkbox" id="ios_tx" name="ios_tx" value="ios_tx"  onchange="toggle_tx_ios()">
+    <label for="ios_tx"> iOS</label><br> 
+    <input type="checkbox" id="windows_tx" name="windows_tx" value="windows_tx"  onchange="toggle_tx_windows()">
+    <label for="windows_tx"> Windows</label><br>
+    <input type="checkbox" id="other_tx" name="other_tx" value="other_tx"  onchange="toggle_tx_others()">
+    <label for="other_tx"> Wearables/Other Beaconing Devices</label><br>
+  
+  <h4>Receiver Device</h4>
+  <input type="checkbox" id="rxAndroid" name="rxandroid" value="rxandroid" checked>
+  <label for="rx1"> Android</label><br>
+  
+  <h6> * Support for iOS receivers upcoming * </h6>
+
   <div class="divider"></div>
 
 <!-- <div class="container">
 <iframe  title="Android-Android testing" width="480" height="390" src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/view?usp=sharing"></iframe>
 </div> -->
-<div class="video-container">
-    <iframe src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/preview" width="640" height="480">
-    </iframe>
+<div class="video-container_android">
+    <div style="width: 40%; float:left">
+      <h4>Android Transmitter and Receiver. Required Installations:</h4>
+      <ul>
+        <li><h5>Android TX-RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+      </ul>  
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
+
+    </div>
+    <div style="width: 60%; float:right">
+      <iframe src="https://drive.google.com/file/d/10i9CFUi_NZLqLBQJkpegpqj3CPqPqKxV/preview" width="640" height="480">
+      </iframe>
+    </div>
 </div>
 
-  <div class="cat-index">
-    <h4>Data Collection Platforms</h4>
-    {% for cat in site.tags %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    
-    <ul class="cat-post">
-      {% for post in cat[1] %}
-      <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
-        <li>
-          {{post.title}}
-          <small class="post-date">{{post.date | date_to_string}}</small>
-        </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
+<div class="video-container_ios">
+    <div style="width: 40%; float:left">
+      <h4>iOS Transmitter, Android Receiver. Required Installations:</h4>
+      <ul>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>iOS Beacon Scanner App: <a href="https://apps.apple.com/us/app/ble-scanner-4-0/id1221763603" style="color:blue">link</a>. Works good with both iPad and iPhone.</h5></li>
+      </ul>  
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
+
+    </div>
+    <div style="width: 60%; float:right">
+      <iframe src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/preview" width="640" height="480">
+      </iframe>
+    </div>
+</div>
+
+<div class="video-container_windows">
+<div style="width: 40%; float:left">
+      <h4>Windows Transmitter, Android Receiver. Required Installations:</h4>
+      <ul>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>Windows Quick Beacon App: <a href="https://www.microsoft.com/en-us/p/quick-beacon/9nblggh43mp7" style="color:blue">link</a> </h5></li>
+      </ul>  
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
+
+    </div>
+    <div style="width: 60%; float:right">
+      <iframe src="https://drive.google.com/file/d/10ZIKqfFWeSEo2hGMFIUkmMz3vtzaAP6r/preview" width="640" height="480">
+      </iframe>
+    </div>
+</div>
+
+<div class="video-container_others">
+<div style="width: 40%; float:left">
+      <h5>Wearable and other beaconing devices as the Transmitter (Fitbits/Tile etc) and Android Receiver. Required Installations:</h5>
+      <ul>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+      </ul>  
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
+
+    </div>
+    <div style="width: 60%; float:right">
+      <iframe src="https://drive.google.com/file/d/178KDPLf40wGeHJgiZrgDqFZuyTjsSoht/preview" width="640" height="480">
+      </iframe>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function toggle_tx_android(){
+
+  if (document.getElementById('android_tx').checked) {
+    $(".video-container_android").show(); 
+  } else {
+       $(".video-container_android").hide();
+  }
+  }
+
+  function toggle_tx_ios(){
+
+  if (document.getElementById('ios_tx').checked) {
+    $(".video-container_ios").show();
+  } else {
+    $(".video-container_ios").hide();
+  }
+  }
+
+    function toggle_tx_windows(){
+
+  if (document.getElementById('windows_tx').checked) {
+    $(".video-container_windows").show();
+  } else {
+    $(".video-container_windows").hide();
+  }
+  }
+
+    function toggle_tx_others(){
+
+  if (document.getElementById('other_tx').checked) {
+    $(".video-container_others").show();
+  } else {
+    $(".video-container_others").hide();
+  }
+  }
+</script>
+
 </div>
