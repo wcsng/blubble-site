@@ -16,7 +16,7 @@
 title: Blubble
 description: > # this means to ignore newlines until "baseurl:"
   Effective contact tracing using Crowdsourced Bluetooth proximity sensing
-baseurl: "blubble-site"
+baseurl: "https://wcsng.ucsd.edu/blubble-site"
 url: "https://wcsng.ucsd.edu"
 permalink: /:year/:month/:day/:title
 paginate: 5
