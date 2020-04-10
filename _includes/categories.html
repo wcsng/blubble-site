@@ -1,8 +1,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <div class="col s12 cat-div">
+  <p> We are researchers of WCSNG lab at UCSD, and we are collecting data for building a classification algorithm to sense proximity via RSSI values of BLE advertised beacons. For this, we have built a crowdsourced data-collection platform, and we would be very grateful if you could contribute to this. The data we are collection involves Bluetooth RSSI data, geo-location data and some data about the device chipset/manufacturers. All the data is stored in our secure database hosted on Google Firebase, and any data collected is anonymized with randomized user id strings.</p>
+
   <h4>Please select your Data collection platform to obtain setup instructions</h4>
   <div class="left50" style="width: 50%; float:left;">
-  <h4>Transmitter Device</h4>
+  <h5>Transmitter Device</h5>
     <input type="radio" id="android" name="tx" value="android_tx"  onchange="render_slides(this)" checked>
     <label for="android"> Android</label><br>
     <input type="radio" id="ios" name="tx" value="ios_tx" onchange="render_slides(this)" >
@@ -17,7 +19,7 @@
     <label for="misc"> Wearables/Other Beaconing Devices</label><br>
   </div>
   <div class="right50" style="width: 50%; float:right;">
-  <h4>Receiver Device</h4>
+  <h5>Receiver Device</h5>
   <input type="radio" id="android_rx" name="rx" value="android_rx"  onchange="render_slides(this)" checked>
   <label for="android_rx"> Android</label><br>
   <input type="radio" id="ios_rx" name="rx" value="ios_rx" onchange="render_slides(this)" >
@@ -206,13 +208,18 @@ function render_slides(myRadio) {
 
 @media screen and (min-width: 601px) {
   h4 {
-    font-size:1.3vw;
-    font-family: Ariel, sans-serif;
+    font-size:1.2vw;
+    font-family: Roboto, sans-serif;
   }
 
   h5 {
   font-size:0.95vw;
-  font-family: Ariel, sans-serif;
+  font-family: Roboto, sans-serif;
+  }
+
+    p {
+    font-size:0.95vw;
+    font-family: Roboto, sans-serif;
   }
 
 }
@@ -221,13 +228,18 @@ function render_slides(myRadio) {
 @media screen and (max-width: 600px) {
   h4 {
     font-size:3.5vw;
-    font-family: Ariel, sans-serif;
+    font-family: Roboto, sans-serif;
   }
 
 
   h5 {
   font-size:2.5vw;
-  font-family: Ariel, sans-serif;
+  font-family: Roboto, sans-serif;
+  }
+
+  p {
+    font-size:3vw;
+    font-family: Roboto, sans-serif;
   }
 }
 
