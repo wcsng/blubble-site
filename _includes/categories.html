@@ -1,44 +1,93 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <div class="col s12 cat-div">
   <h4>Please select your Data collection platform to obtain setup instructions</h4>
-  <h5>Transmitter Device</h5>
-    <input type="checkbox" id="android_tx" name="android_tx" value="android_tx" onchange="toggle_tx_android()">
-    <label for="android_tx"> Android</label><br>
-    <input type="checkbox" id="ios_tx" name="ios_tx" value="ios_tx"  onchange="toggle_tx_ios()">
-    <label for="ios_tx"> iPad + iPhone</label><br> 
-    <input type="checkbox" id="windows_tx" name="windows_tx" value="windows_tx"  onchange="toggle_tx_windows()">
-    <label for="windows_tx"> Windows</label><br>
-    <input type="checkbox" id="mac_tx" name="mac_tx" value="mac_tx"  onchange="toggle_tx_mac()">
-    <label for="mac_tx"> Mac</label><br>
-    <input type="checkbox" id="other_tx" name="other_tx" value="other_tx"  onchange="toggle_tx_others()">
-    <label for="other_tx"> Wearables/Other Beaconing Devices</label><br>
-  
+  <div class="left50" style="width: 50%; float:left;">
+  <h4>Transmitter Device</h4>
+    <input type="radio" id="android" name="tx" value="android_tx"  onchange="render_slides(this)" checked>
+    <label for="android"> Android</label><br>
+    <input type="radio" id="ios" name="tx" value="ios_tx" onchange="render_slides(this)" >
+    <label for="ios"> iPad + iPhone</label><br> 
+    <input type="radio" id="windows" name="tx" value="windows_tx"  onchange="render_slides(this)" >
+    <label for="windows"> Windows</label><br>
+    <input type="radio" id="mac" name="tx" value="mac_tx" onchange="render_slides(this)" >
+    <label for="mac"> Mac</label><br>
+    <input type="radio" id="linux" name="tx" value="linux_tx" onchange="render_slides(this)" >
+    <label for="linux"> Linux</label><br>
+    <input type="radio" id="misc" name="tx" value="other_tx" onchange="render_slides(this)" >
+    <label for="misc"> Wearables/Other Beaconing Devices</label><br>
+  </div>
+  <div class="right50" style="width: 50%; float:right;">
   <h4>Receiver Device</h4>
-  <input type="checkbox" id="rxAndroid" name="rxandroid" value="rxandroid" checked>
-  <label for="rx1"> Android</label><br>
-  
-  <h6> * Support for iOS receivers upcoming * </h6>
+  <input type="radio" id="android_rx" name="rx" value="android_rx"  onchange="render_slides(this)" checked>
+  <label for="android_rx"> Android</label><br>
+  <input type="radio" id="ios_rx" name="rx" value="ios_rx" onchange="render_slides(this)" >
+  <label for="ios_rx"> iOS </label><br>
+  </div>
 
   <div class="divider"></div>
 
-<!-- <div class="container">
-<iframe  title="Android-Android testing" width="480" height="390" src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/view?usp=sharing"></iframe>
-</div> -->
-<div class="video-container_android">
-    <!-- <div class = "example" style="width: 40%; float:left;" >
-      <h5>Android Transmitter and Receiver. Required Installations:</h5>
-      <ul>
-        <li><h5>Android TX-RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
-      </ul>  
-      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
 
-    </div> -->
-    <!-- <div style="width: 60%; float:right"> -->
-      <!-- <iframe src="https://drive.google.com/file/d/10i9CFUi_NZLqLBQJkpegpqj3CPqPqKxV/preview" width="640" height="480" allowfullscreen>
-      </iframe> -->
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    <!-- </div> -->
+<div class="slides_container_android_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Android, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
+<div class="slides_container_ios_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Ios, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_windows_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Windows, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_mac_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Mac, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_linux_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Linux, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_misc_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Misc, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_android_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Android, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_ios_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Ios, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_windows_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Windows, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_mac_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Mac, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_linux_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Linux, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_misc_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Misc, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpY2yRyqlIl8hgZw1WqZNeeaLBv7uP6bCUPHM3Pyiq7g7hiII2zza29QuuI86aGE2dP6KLY7R3rugU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<!-- 
 <div class="video-container_ios">
     <div class="example" style="width: 40%; float:left;">
       <h5>iOS Transmitter, Android Receiver. Required Installations:</h5>
@@ -101,53 +150,39 @@
       </iframe>
     </div>
 </div>
-
+ -->
 <script type="text/javascript">
-  function toggle_tx_android(){
 
-  if (document.getElementById('android_tx').checked) {
-    $(".video-container_android").show(); 
-  } else {
-       $(".video-container_android").hide();
-  }
-  }
+prev_tx = "android";
+prev_rx = "android";
 
-  function toggle_tx_ios(){
+function render_slides(myRadio) {
+    if(myRadio.name=="tx")
+    {
+      // alert("Changing TX to: "+myRadio.id)
+      $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
+      new_tx = myRadio.id;
+      $(".slides_container_"+new_tx+"_"+prev_rx).show();
+      prev_tx = new_tx;
+    }
+    else{
+      // alert("Changing RX to: "+myRadio.id)
+      if(prev_rx=="android"){
+        new_rx="ios";
+      }
+      else{
+        new_rx="android"; 
+      }
+      $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
+      $(".slides_container_"+prev_tx+"_"+new_rx).show();
+      prev_rx = new_rx;
 
-  if (document.getElementById('ios_tx').checked) {
-    $(".video-container_ios").show();
-  } else {
-    $(".video-container_ios").hide();
-  }
-  }
+    }
+    // alert('Old value: ' + current_tx);
+    // alert('New value: ' + myRadio.id);
+    // current_tx = myRadio.id;
+}
 
-    function toggle_tx_windows(){
-
-  if (document.getElementById('windows_tx').checked) {
-    $(".video-container_windows").show();
-  } else {
-    $(".video-container_windows").hide();
-  }
-  }
-
-
-    function toggle_tx_mac(){
-
-  if (document.getElementById('mac_tx').checked) {
-    $(".video-container_mac").show();
-  } else {
-    $(".video-container_mac").hide();
-  }
-  }
-
-    function toggle_tx_others(){
-
-  if (document.getElementById('other_tx').checked) {
-    $(".video-container_others").show();
-  } else {
-    $(".video-container_others").hide();
-  }
-  }
 </script>
 
 <!-- <style>
@@ -168,12 +203,6 @@
 }
 </style> -->
 <style>
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
 @media screen and (min-width: 601px) {
   h4 {
@@ -206,3 +235,5 @@
 </style>
 
 </div>
+
+
