@@ -33,7 +33,26 @@
   div
     @include transition(all .3s ease-in-out)
 
-.video-container_android
+
+.slides_container_android_android
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 50px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+
+  .slides_container_android_android iframe,
+  .slides_container_android_android object,
+  .slides_container_android_android embed,
+  position: relative 
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_ios_android
   position: relative
   padding-bottom: 56.25%
   padding-top: 35px
@@ -43,16 +62,16 @@
   margin-top: 2em
   display: none 
 
-.video-container_android iframe,  
-.video-container_android object,  
-.video-container_android embed 
-  position: absolute 
+  .slides_container_ios_android iframe,
+  .slides_container_ios_android object,
+  .slides_container_ios_android embed,
+  position: relative
   top: 0 
   right: 0 
-  width: 60% 
-  height: 60% 
+  width: 100% 
+  height: 100% 
 
-.video-container_ios
+.slides_container_windows_android
   position: relative
   padding-bottom: 56.25%
   padding-top: 35px
@@ -62,16 +81,16 @@
   margin-top: 2em
   display: none 
 
-.video-container_ios iframe,  
-.video-container_ios object,  
-.video-container_ios embed 
-  position: absolute 
+  .slides_container_windows_android iframe,
+  .slides_container_windows_android object,
+  .slides_container_windows_android embed,
+  position: relative
   top: 0 
   right: 0 
-  width: 60% 
-  height: 60% 
+  width: 100% 
+  height: 100% 
 
-.video-container_windows
+.slides_container_mac_android
   position: relative
   padding-bottom: 56.25%
   padding-top: 35px
@@ -81,16 +100,16 @@
   margin-top: 2em
   display: none 
 
-.video-container_windows iframe,  
-.video-container_windows object,  
-.video-container_windows embed 
-  position: absolute 
+  .slides_container_mac_android iframe,
+  .slides_container_mac_android object,
+  .slides_container_mac_android embed,
+  position: relative
   top: 0 
   right: 0 
-  width: 60% 
-  height: 60% 
+  width: 100% 
+  height: 100% 
 
-.video-container_others
+.slides_container_linux_android
   position: relative
   padding-bottom: 56.25%
   padding-top: 35px
@@ -100,14 +119,148 @@
   margin-top: 2em
   display: none 
 
-.video-container_others iframe,  
-.video-container_others object,  
-.video-container_others embed 
-  position: absolute 
+  .slides_container_linux_android iframe,
+  .slides_container_linux_android object,
+  .slides_container_linux_android embed,
+  position: relative
   top: 0 
   right: 0 
-  width: 60% 
-  height: 60% 
+  width: 100% 
+  height: 100% 
+
+.slides_container_misc_android
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_misc_android iframe,
+  .slides_container_misc_android object,
+  .slides_container_misc_android embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_android_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_android_ios iframe,
+  .slides_container_android_ios object,
+  .slides_container_android_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_ios_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_ios_ios iframe,
+  .slides_container_ios_ios object,
+  .slides_container_ios_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_windows_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_windows_ios iframe,
+  .slides_container_windows_ios object,
+  .slides_container_windows_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_mac_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_mac_ios iframe,
+  .slides_container_mac_ios object,
+  .slides_container_mac_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_linux_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_linux_ios iframe,
+  .slides_container_linux_ios object,
+  .slides_container_linux_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
+.slides_container_misc_ios
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 35px
+  height: 0
+  overflow: hidden
+  margin-bottom: 2em
+  margin-top: 2em
+  display: none 
+
+  .slides_container_misc_ios iframe,
+  .slides_container_misc_ios object,
+  .slides_container_misc_ios embed,
+  position: relative
+  top: 0 
+  right: 0 
+  width: 100% 
+  height: 100% 
+
 
 .cat-div
   .divider

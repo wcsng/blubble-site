@@ -1,48 +1,106 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <div class="col s12 cat-div">
-  <h4>Transmitter Device</h4>
-    <input type="checkbox" id="android_tx" name="android_tx" value="android_tx" onchange="toggle_tx_android()">
-    <label for="android_tx"> Android</label><br>
-    <input type="checkbox" id="ios_tx" name="ios_tx" value="ios_tx"  onchange="toggle_tx_ios()">
-    <label for="ios_tx"> iOS</label><br> 
-    <input type="checkbox" id="windows_tx" name="windows_tx" value="windows_tx"  onchange="toggle_tx_windows()">
-    <label for="windows_tx"> Windows</label><br>
-    <input type="checkbox" id="other_tx" name="other_tx" value="other_tx"  onchange="toggle_tx_others()">
-    <label for="other_tx"> Wearables/Other Beaconing Devices</label><br>
-  
-  <h4>Receiver Device</h4>
-  <input type="checkbox" id="rxAndroid" name="rxandroid" value="rxandroid" checked>
-  <label for="rx1"> Android</label><br>
-  
-  <h6> * Support for iOS receivers upcoming * </h6>
+  <p> We really appreciate you taking the first step to make this system a reality. We are currently in the early stage of testing our algorithms and making our system trustworthy and error-free. Our current aim is to provide a robust and trustworthy classification algorithm and design an accurate risk score to each of your interactions with other people. In order to achieve this, we need to collect data from a diverse set of environments and devices. </p>
+
+<p> If you have read up to here, we presume you’re definitely interested in our cause and would like to know how you could help. To this effect, we request you to take 10 minutes of your time to collect some data for us using your electronic devices. Our simple experiment will help us understand how the Bluetooth signals will change if you’re within or outside a radius of 6 feet from another device. To get a high-level idea of our experiment, please watch this short clip and proceed to select the devices you would like to use.
+</p>
+
+  <p>Please select your Data collection platform to obtain setup instructions</p>
+  <div class="left50" style="width: 50%; float:left;">
+  <h5>Transmitter Device</h5>
+    <input type="radio" id="android" name="tx" value="android_tx"  onchange="render_slides(this)" autocomplete="off" checked>
+    <label for="android"> Android</label><br>
+    <input type="radio" id="ios" name="tx" value="ios_tx" onchange="render_slides(this)" autocomplete="off" >
+    <label for="ios"> iPad + iPhone</label><br> 
+    <input type="radio" id="windows" name="tx" value="windows_tx"  onchange="render_slides(this)" autocomplete="off" >
+    <label for="windows"> Windows</label><br>
+    <input type="radio" id="mac" name="tx" value="mac_tx" onchange="render_slides(this)" autocomplete="off" >
+    <label for="mac"> Mac</label><br>
+    <input type="radio" id="linux" name="tx" value="linux_tx" onchange="render_slides(this)" autocomplete="off" >
+    <label for="linux"> Linux</label><br>
+    <input type="radio" id="misc" name="tx" value="other_tx" onchange="render_slides(this)" autocomplete="off" >
+    <label for="misc"> Wearables/Other Beaconing Devices</label><br>
+  </div>
+  <div class="right50" style="width: 50%; float:right;">
+  <h5>Receiver Device</h5>
+  <input type="radio" id="android_rx" name="rx" value="android_rx"  onchange="render_slides(this)" autocomplete="off" checked>
+  <label for="android_rx"> Android</label><br>
+  <input type="radio" id="ios_rx" name="rx" value="ios_rx" onchange="render_slides(this)" autocomplete="off" >
+  <label for="ios_rx"> iOS </label><br>
+  </div>
 
   <div class="divider"></div>
 
-<!-- <div class="container">
-<iframe  title="Android-Android testing" width="480" height="390" src="https://drive.google.com/file/d/14-RqQXppvq7xpLuF_-QCu3M6yujFztEo/view?usp=sharing"></iframe>
-</div> -->
-<div class="video-container_android">
-    <div class = "example" style="width: 40%; float:left;" >
-      <h4 style="font-size:2vw;">Android Transmitter and Receiver. Required Installations:</h4>
-      <ul>
-        <li><h5 style="font-size:1.5vw;">Android TX-RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
-      </ul>  
-      <h5 style="font-size:1.5vw;">Please see the audio guided video on the right for installation and experiment instructions</h5>
 
-    </div>
-    <div style="width: 60%; float:right">
-      <iframe src="https://drive.google.com/file/d/10i9CFUi_NZLqLBQJkpegpqj3CPqPqKxV/preview" width="640" height="480" allowfullscreen>
-      </iframe>
-    </div>
+<div class="slides_container_android_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Android, RX: Android</h4>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQBVUr4XMH60kFbBZGbRN7An-wAi41QYJtJ4uR0TVh8X2N6t7MlF7uVtOD2qT3A1W4WxBqiORg-PBg_/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
+<div class="slides_container_ios_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Ios, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPU1466ZjEkxDmhErqvjOoAhYiWln2AayiCMrgF2Ds-vn4c8H8N7jmPTDQIGN6GOp3-_WOuKVEOFlO/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_windows_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Windows, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQkQZiXNiWNc96OdYXOI8SPlOSaLJ7Rk84_uBZZF21xxr42S1MsYtrPjVo9pqRiETLg68sz7mwUTkL/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_mac_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Mac, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR46Lqanr5t1bRf1GsUBfJUKArNUadh9ObJ1mWQGhqoabLGb9o9y53NoA0Ju7SG4mv7BpnVnqt-aHYd/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_linux_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Linux, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQTQYzdkCnIAOcQjKEWbTO6lPm2lFaK_1uIMBJ8ZL_4soSlNu8-Y-UwHCj4aDqK31qQlpj9sikzblPe/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_misc_android">
+      <h4>Slides for Setup/Experiment instructions with TX: Misc, RX: Android</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgz8GxK0evlKnK7GqiU0hyhm9tPaCJIgo0_tWhvyFdc36tN22-YuL2ZgxnuZRWzYUHFIR2hSxBZ0J_/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_android_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Android, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRbbvImrMP3mXNuvMV5F8j7AN4VvLn79ahNDIDprjCpKdFkB2DQOZOiak8hWYfGlZwNrSutHAkyJvty/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_ios_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Ios, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTEpUfIjQiTBgzxmSvL-XNDSTbJfHuo5C6S8Noj1o6z8L1BewodqmPWbOKOwJJj-IKSjcZtd74GzY2s/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_windows_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Windows, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJvbiHWwQLuWEP2ZwwzCDOw05DJSgk-LxnnOOUljaqjLwZXdN2p8uEwyD-VcgzLpZPTk-MwlR2UBYp/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_mac_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Mac, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8QV7ni4gK7jRNkXgKUmylcv37z_TA5vSLa_wPtRX0nlD5DoU14_rBO7JRKBBgbjuWyGXwf6meMhM6/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_linux_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Linux, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQWlbzYhCHv4LDDOLrZsBaXPHT0oAcKmd-rz8tRI9SxpqKorECjKofQ15Qs8mgozOuKTyVvLHip26VZ/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="slides_container_misc_ios">
+      <h4>Slides for Setup/Experiment instructions with TX: Misc, RX: iOS</h4>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6ive7tRdsklv5whW-vwyVszcApBx8OaE4MhlCdI97CLaFNmkJi-OqE5VrlYSt_ujwjDdEVEByGKfK/embed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<!-- 
 <div class="video-container_ios">
     <div class="example" style="width: 40%; float:left;">
-      <h4 style="font-size:2vw;">iOS Transmitter, Android Receiver. Required Installations:</h4>
+      <h5>iOS Transmitter, Android Receiver. Required Installations:</h5>
       <ul>
-        <li><h5 style="font-size:1.5vw;">Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
-        <li><h5 style="font-size:1.5vw;">iOS Beacon Scanner App: <a href="https://apps.apple.com/us/app/ble-scanner-4-0/id1221763603" style="color:blue">link</a>. Works good with both iPad and iPhone.</h5></li>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>iOS Beacon Scanner App: <a href="https://apps.apple.com/us/app/ble-scanner-4-0/id1221763603" style="color:blue">link</a>. Works good with both iPad and iPhone.</h5></li>
       </ul>  
-      <h5 style="font-size:1.5vw;">Please see the audio guided video on the right for installation and experiment instructions</h5>
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
     </div>
 
     <div style="width: 60%; float:right">
@@ -53,12 +111,28 @@
 
 <div class="video-container_windows">
 <div class="example" style="width: 40%; float:left;">
-      <h4 style="font-size:2vw;">Windows Transmitter, Android Receiver. Required Installations:</h4>
+      <h5>Windows Transmitter, Android Receiver. Required Installations:</h5>
       <ul>
-        <li><h5 style="font-size:1.5vw;">Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
-        <li><h5 style="font-size:1.5vw;">Windows Quick Beacon App: <a href="https://www.microsoft.com/en-us/p/quick-beacon/9nblggh43mp7" style="color:blue">link</a> </h5></li>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>Windows Quick Beacon App: <a href="https://www.microsoft.com/en-us/p/quick-beacon/9nblggh43mp7" style="color:blue">link</a> </h5></li>
       </ul>  
-      <h5 style="font-size:1.5vw;">Please see the audio guided video on the right for installation and experiment instructions</h5>
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
+
+    </div>
+    <div style="width: 60%; float:right">
+      <iframe src="https://drive.google.com/file/d/10ZIKqfFWeSEo2hGMFIUkmMz3vtzaAP6r/preview" width="640" height="480" allowfullscreen>
+      </iframe>
+    </div>
+</div>
+
+<div class="video-container_mac">
+<div class="example" style="width: 40%; float:left;">
+      <h5>Mac Transmitter, Android Receiver. Required Installations:</h5>
+      <ul>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>Mac transmit script: <a href="https://drive.google.com/file/d/1bU_RQNibKKXFfpnecKu6VicWzVhLisC4/view?usp=sharing" style="color:blue">link</a> </h5></li>
+      </ul>  
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
 
     </div>
     <div style="width: 60%; float:right">
@@ -68,12 +142,12 @@
 </div>
 
 <div class="video-container_others">
-<div class="example" style="width: 40%; float:left; font-size:2vw;">
-      <h5 style="font-size:2vw;">Wearable and other beaconing devices as the Transmitter (Fitbits/Tile etc) and Android Receiver. Required Installations:</h5>
+<div class="example" style="width: 40%; float:left;">
+      <h5>Wearable and other beaconing devices as the Transmitter (Fitbits/Tile etc) and Android Receiver. Required Installations:</h5>
       <ul>
-        <li><h5 style="font-size:1.5vw;">Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
+        <li><h5>Android RX App: <a href="https://drive.google.com/file/d/144KDk2QzB9wQzIYE_qol_VDVzXLX3Vvq/view?usp=sharing"  style="color:blue">link</a></h5></li>
       </ul>  
-      <h5 style="font-size:1.5vw;">Please see the audio guided video on the right for installation and experiment instructions</h5>
+      <h5>Please see the audio guided video on the right for installation and experiment instructions</h5>
 
     </div>
     <div style="width: 60%; float:right">
@@ -81,43 +155,39 @@
       </iframe>
     </div>
 </div>
-
+ -->
 <script type="text/javascript">
-  function toggle_tx_android(){
 
-  if (document.getElementById('android_tx').checked) {
-    $(".video-container_android").show(); 
-  } else {
-       $(".video-container_android").hide();
-  }
-  }
+prev_tx = "android";
+prev_rx = "android";
 
-  function toggle_tx_ios(){
+function render_slides(myRadio) {
+    if(myRadio.name=="tx")
+    {
+      // alert("Changing TX to: "+myRadio.id)
+      $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
+      new_tx = myRadio.id;
+      $(".slides_container_"+new_tx+"_"+prev_rx).show();
+      prev_tx = new_tx;
+    }
+    else{
+      // alert("Changing RX to: "+myRadio.id)
+      if(prev_rx=="android"){
+        new_rx="ios";
+      }
+      else{
+        new_rx="android"; 
+      }
+      $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
+      $(".slides_container_"+prev_tx+"_"+new_rx).show();
+      prev_rx = new_rx;
 
-  if (document.getElementById('ios_tx').checked) {
-    $(".video-container_ios").show();
-  } else {
-    $(".video-container_ios").hide();
-  }
-  }
+    }
+    // alert('Old value: ' + current_tx);
+    // alert('New value: ' + myRadio.id);
+    // current_tx = myRadio.id;
+}
 
-    function toggle_tx_windows(){
-
-  if (document.getElementById('windows_tx').checked) {
-    $(".video-container_windows").show();
-  } else {
-    $(".video-container_windows").hide();
-  }
-  }
-
-    function toggle_tx_others(){
-
-  if (document.getElementById('other_tx').checked) {
-    $(".video-container_others").show();
-  } else {
-    $(".video-container_others").hide();
-  }
-  }
 </script>
 
 <!-- <style>
@@ -137,4 +207,48 @@
   }
 }
 </style> -->
+<style>
+
+@media screen and (min-width: 601px) {
+  h4 {
+    font-size:1.2vw;
+    font-family: Roboto, sans-serif;
+  }
+
+  h5 {
+  font-size:0.95vw;
+  font-family: Roboto, sans-serif;
+  }
+
+    p {
+    font-size:0.95vw;
+    font-family: Roboto, sans-serif;
+  }
+
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size:3.5vw;
+    font-family: Roboto, sans-serif;
+  }
+
+
+  h5 {
+  font-size:2.5vw;
+  font-family: Roboto, sans-serif;
+  }
+
+  p {
+    font-size:3vw;
+    font-family: Roboto, sans-serif;
+  }
+}
+
+
+</style>
+
 </div>
+
+

@@ -2,16 +2,29 @@
 layout: page
 css: ["index.css"]
 ---
-<h5> BluBLE, a wordplay between BLE and bubble, conveys very succinctly what we intend to achieve. Basically, we want to utilize Bluetooth Low Energy (BLE) beacons in order to classify the 6ft safe bubble you should be in, to maximize your social distancing effectiveness until the COVID-19 pandemic subsides. To this end, we are utilizing crowd-sourced data collection via various data collection apps we have developed. Please checkout our <a href="https://wcsng.github.io/blubble-site/categories">Data Collection</a> page to help us out by contributing to the project. The below figure visually illustrates our technical approach.</h5>
+<h4> Vision </h4>
+<p>COVID-19 has been a rapidly evolving pandemic and owing to its two week incubation period and high communicability, it has infected over 1.5 million people in a matter of 4 months. Various international health agencies have touted the merits of social distancing, and in states like California and New York, strict quarantine measures have resulted in a decline of new cases. Yet, experts argue that this social distancing is not nearly enough. To again open up our streets and public spaces, we need to be able to have:</p>
+<ul>
+<li>A <em>ubiquitous</em> system that alerts you if someone accidentally comes closer than 6 ft to you or warns about specific indoor spaces which have a higher likelihood of COVID-19 </li>
+<li>A <em>dynamic system</em> which can inform specific vulnerable individuals to self-quarantine; </li>
+<li>A <em>private and voluntary</em> system which will effectively anonymize contact tracking. </li>
+<li>A system to <em>understand</em> how this disease spreads;</li>
+</ul>
 
+<!-- <p> BluBLE, a wordplay between BLE and bubble, conveys very succinctly what we intend to achieve. Basically, we want to utilize Bluetooth Low Energy (BLE) beacons in order to classify the 6ft safe bubble you should be in, to maximize your social distancing effectiveness until the COVID-19 pandemic subsides. To this end, we are utilizing crowd-sourced data collection via various data collection apps we have developed. Please checkout our <a href="https://wcsng.github.io/blubble-site/categories">Data Collection</a> page to help us out by contributing to the project. The below figure visually illustrates our technical approach.</p>
+ -->
+<div class="left50" style="width: 50%; float:left;">
+<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" width="500" height="300" />
+</div>
+<div class="tight50" style="width: 50%; float:right;">
+<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" width="500" height="300"/>
+</div>
 
-<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" width="500"/>
+<p> We are members of the <a href="https://wcsng.ucsd.edu">WCSNG Lab</a> (Wireless Communications Networks and Sensing), UCSD. The Lab is headed by <a href="http://web.eng.ucsd.edu/~dineshb/">Prof. Dinesh Bharadia</a>. We work very extensively in the field of wireless localization, which forms the very heart of this problem of contact tracing via bluetooth connections. </p>
 
-<h5> We are members of the <a href="https://wcsng.ucsd.edu">WCSNG Lab</a> (Wireless Communications Networks and Sensing), UCSD. The Lab is headed by <a href="http://web.eng.ucsd.edu/~dineshb/">Prof. Dinesh Bharadia</a>. We work very extensively in the field of wireless localization, which forms the very heart of this problem of contact tracing via bluetooth connections. </h5>
+<!-- <p> Recent publications from the lab in the field of wireless localization have been BLoc, LocAP, DLoc and more. Notably, algorithms framed by BLoc have also been adopted in the Bluetooth standards in order to obtain fine-grained localization. Feel free to browse our <a href="https://wcsng.ucsd.edu">lab webpage</a> to know more about our lab. </p> -->
 
-<h5> Recent publications from the lab in the field of wireless localization have been BLoc, LocAP, DLoc and more. Notably, algorithms framed by BLoc have also been adopted in the Bluetooth standards in order to obtain fine-grained localization. Feel free to browse our <a href="https://wcsng.ucsd.edu">lab webpage</a> to know more about our lab. </h5>
-
-<div class="row">
+ <div class="row">
   {% for post in paginator.posts %}
   <div class="col s12">
     <div class="card hoverable">
@@ -72,13 +85,61 @@ css: ["index.css"]
       </li>
     </ul>
   </div>
-</div>
+</div> 
 
 <style>
+
+@media screen and (min-width: 601px) {
+  h4 {
+    font-size:1.3vw;
+    font-family: Ariel, sans-serif;
+  }
+  p {
+    font-size:0.95vw;
+    font-family: Roboto, sans-serif;
+  }
+  li {
+    font-size:0.95vw;
+    font-family: Roboto, sans-serif;
+  }
   .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+/*  h5 {
+  font-size:0.95vw;
+  font-family: Ariel, sans-serif;
+  }*/
+
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size:6vw;
+    font-family: Ariel, sans-serif;
+  }
+  p {
+    font-size:4vw;
+    font-family: Roboto, sans-serif;
+  }
+  li {
+    font-size:4vw;
+    font-family: Roboto, sans-serif;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+
+  /*h5 {
+  font-size:4vw;
+  font-family: Ariel, sans-serif;
+  }*/
+}
+
 </style>
