@@ -208,9 +208,6 @@ width: 50%; float:left;
 .prof .right50{
 width: 50%; float:right;
 }
-.prof .left50 img{
-  width:100%; height:auto;
-}
 
 .phd{
   width: 100%; 
