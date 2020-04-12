@@ -140,7 +140,7 @@ title: "About Us"
   font-family: Roboto, sans-serif;
   }
   .prof .left50 img{
-  max-width:100%; width:50%; height:auto;
+  width:100px; height:200px;
 }
 }
 
