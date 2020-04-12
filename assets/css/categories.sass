@@ -33,27 +33,9 @@
   div
     @include transition(all .3s ease-in-out)
 
-.overview_vid
-  position: relative
-  padding-bottom: 56.25%
-  padding-top: 50px
-  height: 0
-  overflow: hidden
-  margin-bottom: 2em
-  margin-top: 2em
-
-  .overview-vid iframe,
-  .overview-vid object,
-  .overview-vid embed,
-  position: relative 
-  top: 0 
-  right: 0 
-  width: 100% 
-  height: 100% 
-
 .slides_container_android_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 50px
   height: 0
   overflow: hidden
@@ -71,7 +53,7 @@
 
 .slides_container_ios_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -90,7 +72,7 @@
 
 .slides_container_windows_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -109,7 +91,7 @@
 
 .slides_container_mac_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -128,7 +110,7 @@
 
 .slides_container_linux_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -147,7 +129,7 @@
 
 .slides_container_misc_android
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -166,7 +148,7 @@
 
 .slides_container_android_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -185,7 +167,7 @@
 
 .slides_container_ios_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -204,7 +186,7 @@
 
 .slides_container_windows_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -223,7 +205,7 @@
 
 .slides_container_mac_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -242,7 +224,7 @@
 
 .slides_container_linux_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -261,7 +243,7 @@
 
 .slides_container_misc_ios
   position: relative
-  padding-bottom: 56.25%
+  padding-bottom: 5%
   padding-top: 35px
   height: 0
   overflow: hidden
@@ -304,14 +286,3 @@ ul
           padding-left: 20px
 
         @include transition(all .2s ease-in-out)
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px)
-  .video-container_others 
-    font-size: 20px
-  
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) 
-  .video-container_others 
-    font-size: 20px
