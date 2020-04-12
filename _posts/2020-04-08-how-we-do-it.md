@@ -16,15 +16,15 @@ date:   2020-04-08 00:50:13
 
 @media screen and (min-width: 601px) {
   h4 {
-    font-size:26px;
+    font-size:22px;
     font-family: Ariel, sans-serif;
   }
   p {
-    font-size:21px;
+    font-size:18px;
     font-family: Roboto, sans-serif;
   }
   li {
-    font-size:21px;
+    font-size:18px;
     font-family: Roboto, sans-serif;
   }
   .center {
@@ -34,11 +34,9 @@ date:   2020-04-08 00:50:13
   width: 50%;
 }
   h5 {
-  font-size:23px;
+  font-size:20px;
   font-family: Ariel, sans-serif;
   }
-
-}
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {

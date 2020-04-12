@@ -22,9 +22,9 @@ title: "About Us"
 
 <h4> Team: </h4>
 
-<div class="team" style="width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px" >
+<div class="prof" style="width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px" >
 <div class="left50" style="width: 50%; float:left;">
-<img src="https://wcsng.ucsd.edu/images/teampic/dinesh.jpg" class="center" style="max-width:1648px; max-height:2136px; width:auto; height:350px"/>
+<img src="https://wcsng.ucsd.edu/images/teampic/dinesh.jpg" class="center"/>
 </div>
 <div class="right50" style="width: 50%; float:right;">
 <h4> Dinesh Bharadia: Assistant Professor</h4>
@@ -36,7 +36,7 @@ title: "About Us"
 
 <div class="divider"></div>
 
-<div class ="phd"  style="width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px">
+<div class ="phd"  style="width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px">
 
 <div class="left50_1" style="width: 50%; float:left; clear:both; display:flex; align-items: center;">
 	<div class="left0" style="width: 50%; float:left;">
@@ -60,21 +60,45 @@ title: "About Us"
 
 </div>
 
+<div class="divider"></div>
 
+<div class ="ug"  style="width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px">
+
+<div class="left50_1" style="width: 50%; float:left; clear:both; display:flex; align-items: center;">
+	<div class="left0" style="width: 50%; float:left;">
+		<img src="./assets/res/shivani.JPG" class="center" style="max-width:1242px; max-height:1656px; width:auto; height:200px"/>
+	</div>
+	<div class="left25" style="width: 50%; float:right;">
+		<h5>Shivani Bhakta : UG Student</h5>	
+		<p> Shivani’s a Senior EE student focusing on Machine Learning and will be working on the BLE Localization at WCSNG.    </p>
+	</div>
+</div>
+
+<div class="right50_1" style="width: 50%; float:right; clear:both; display:flex; align-items: center;">
+	<div class="right75" style="width: 50%; float:left;">
+		<img src="./assets/res/sai.jpg" class="center" style="max-width:3024px; max-height:4032px; width:auto; height:200px"/>
+	</div>
+	<div class="right100" style="width: 50%; float:right;">
+		<h5>Saikiran Komatineni: UG Student</h5>	
+		<p> Sai’s a Senior EE student focusing on Machine Learning, Robotics, and Control and has research experience in the field of 3D Reconstruction. </p>
+	</div>
+</div>
+
+</div>
 
 <style>
 
 @media screen and (min-width: 601px) {
   h4 {
-    font-size:26px;
+    font-size:22px;
     font-family: Ariel, sans-serif;
   }
   p {
-    font-size:21px;
+    font-size:18px;
     font-family: Roboto, sans-serif;
   }
   li {
-    font-size:21px;
+    font-size:18px;
     font-family: Roboto, sans-serif;
   }
   .center {
@@ -83,12 +107,14 @@ title: "About Us"
   margin-right: auto;
   width: 50%;
 }
+
+.prof .left50 img{
+  max-width:1648px; max-height:2136px; width:auto; height:350px;
+}
   h5 {
-  font-size:23px;
+  font-size:20px;
   font-family: Ariel, sans-serif;
   }
-
-}
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h4 {
@@ -113,7 +139,9 @@ title: "About Us"
   font-size:5vw;
   font-family: Roboto, sans-serif;
   }
-
+  .prof .left50 img{
+  max-width:1648px; max-height:2136px; width:auto; height:150px;
+}
 }
 
 </style>
