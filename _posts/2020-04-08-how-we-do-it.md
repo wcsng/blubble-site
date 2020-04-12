@@ -37,6 +37,7 @@ date:   2020-04-08 00:50:13
   font-size:20px;
   font-family: Ariel, sans-serif;
   }
+}
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {

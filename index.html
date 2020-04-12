@@ -13,12 +13,12 @@ css: ["index.css"]
 
 <!-- <p> BluBLE, a wordplay between BLE and bubble, conveys very succinctly what we intend to achieve. Basically, we want to utilize Bluetooth Low Energy (BLE) beacons in order to classify the 6ft safe bubble you should be in, to maximize your social distancing effectiveness until the COVID-19 pandemic subsides. To this end, we are utilizing crowd-sourced data collection via various data collection apps we have developed. Please checkout our <a href="https://wcsng.github.io/blubble-site/categories">Data Collection</a> page to help us out by contributing to the project. The below figure visually illustrates our technical approach.</p>
  -->
- <div class="anims" style="width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px" >
-<div class="left50" style="width: 50%; float:left;">
-<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" width="500" height="300" />
+ <div class="anims"  >
+<div class="left50">
+<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" />
 </div>
-<div class="tight50" style="width: 50%; float:right;">
-<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" width="500" height="300"/>
+<div class="right50">
+<img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" class="center" alt="drawing" />
 </div>
 </div>
 
@@ -114,6 +114,26 @@ css: ["index.css"]
   font-size:20px;
   font-family: Ariel, sans-serif;
   }
+  .anims{
+    width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px;
+  }
+  .anims .left50{
+    width: 50%; float:left;
+  }
+  .anims .left50 img{
+    width: 500px;
+    height: 300px;
+  }
+  
+  .anims .right50{
+    width: 50%; float:right;
+  }
+  .anims .right50 img{
+    width: 500px;
+    height: 300px;
+  }
+
+}
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
@@ -134,6 +154,25 @@ css: ["index.css"]
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  }
+
+    .anims{
+    width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px;
+  }
+  .anims .left50{
+    width: 50%; float:left;
+  }
+  .anims .left50 img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .anims .right50{
+    width: 50%; float:right;
+  }
+  .anims .right50 img{
+    width: 100%;
+    height: auto;
   }
 
   /*h5 {
