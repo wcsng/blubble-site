@@ -22,11 +22,11 @@ title: "About Us"
 
 <h4> Team: </h4>
 
-<div class="prof" style="width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px" >
-<div class="left50" style="width: 50%; float:left;">
+<div class="prof" >
+<div class="left50">
 <img src="https://wcsng.ucsd.edu/images/teampic/dinesh.jpg" class="center"/>
 </div>
-<div class="right50" style="width: 50%; float:right;">
+<div class="right50">
 <h4> Dinesh Bharadia: Assistant Professor</h4>
 <h5>Dept. of Electrical and Computer Engineering</h5>
 <p>I received my Ph.D. at Stanford University where I worked with Prof. Sachin Katti. From 2013 to 2015, I took a leave of absence from my Ph.D. to commercialize research on the practical full-duplex radio at Kumu Networks, which underwent successful field trials with tier 1 network providers worldwide – Deutsche Telekom and SK Telecom and is now being commercially deployed.</p>
@@ -36,23 +36,23 @@ title: "About Us"
 
 <div class="divider"></div>
 
-<div class ="phd"  style="width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px">
+<div class ="phd">
 
-<div class="left50_1" style="width: 50%; float:left; clear:both; display:flex; align-items: center;">
-	<div class="left0" style="width: 50%; float:left;">
+<div class="left50">
+	<div class="left0">
 		<img src="https://wcsng.ucsd.edu/images/teampic/aditya.jpg" class="center" style="max-width:1188px; max-height:1535px; width:auto; height:200px"/>
 	</div>
-	<div class="left25" style="width: 50%; float:right;">
+	<div class="left25">
 		<h5>Aditya Arun : PhD Student</h5>	
 		<p> Aditya's research currently focuses on realizing accurate indoor localization by introducing a new WiFi-based sensor modality using graph-based optimization techniques. </p>
 	</div>
 </div>
 
-<div class="right50_1" style="width: 50%; float:right; clear:both; display:flex; align-items: center;">
-	<div class="right75" style="width: 50%; float:left;">
+<div class="right50">
+	<div class="right75">
 		<img src="https://wcsng.ucsd.edu/images/teampic/agrim.png" class="center" style="max-width:284px; max-height:367px; width:auto; height:200px"/>
 	</div>
-	<div class="right100" style="width: 50%; float:right;">
+	<div class="right100">
 		<h5>Agrim Gupta: PhD Student</h5>	
 		<p> Agrim's research interest is solving analysis-intensive problems stemming in Wireless Communications, involving topics like Indoor Positioning and Backscatter Communications. </p>
 	</div>
@@ -62,23 +62,23 @@ title: "About Us"
 
 <div class="divider"></div>
 
-<div class ="ug"  style="width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px">
+<div class ="ug">
 
-<div class="left50_1" style="width: 50%; float:left; clear:both; display:flex; align-items: center;">
-	<div class="left0" style="width: 50%; float:left;">
+<div class="left50">
+	<div class="left0">
 		<img src="./assets/res/shivani.JPG" class="center" style="max-width:1242px; max-height:1656px; width:auto; height:200px"/>
 	</div>
-	<div class="left25" style="width: 50%; float:right;">
+	<div class="left25" >
 		<h5>Shivani Bhakta : UG Student</h5>	
 		<p> Shivani’s a Senior EE student focusing on Machine Learning and will be working on the BLE Localization at WCSNG.    </p>
 	</div>
 </div>
 
-<div class="right50_1" style="width: 50%; float:right; clear:both; display:flex; align-items: center;">
-	<div class="right75" style="width: 50%; float:left;">
+<div class="right50" >
+	<div class="right75">
 		<img src="./assets/res/sai.jpg" class="center" style="max-width:3024px; max-height:4032px; width:auto; height:200px"/>
 	</div>
-	<div class="right100" style="width: 50%; float:right;">
+	<div class="right100">
 		<h5>Saikiran Komatineni: UG Student</h5>	
 		<p> Sai’s a Senior EE student focusing on Machine Learning, Robotics, and Control and has research experience in the field of 3D Reconstruction. </p>
 	</div>
@@ -107,10 +107,68 @@ title: "About Us"
   margin-right: auto;
   width: 50%;
 }
-
+.prof{
+width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px;
+}
+.prof .left50{
+width: 50%; float:left;
+}
+.prof .right50{
+width: 50%; float:right;
+}
 .prof .left50 img{
   max-width:1648px; max-height:2136px; width:auto; height:350px;
 }
+
+.phd{
+  width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+
+.phd .left50{
+  width: 50%; float:left; clear:both; display:flex; align-items: center;
+}
+.phd .left50 .left0{
+  width: 50%; float:left;
+}
+.phd .left50 .left25{
+  width: 50%; float:right;
+}
+
+.phd .right50{
+  width: 50%; float:right; clear:both; display:flex; align-items: center;
+}
+
+.phd .right50 .right75{
+ width: 50%; float:left;}
+
+.phd .right50 .right100{
+ width: 50%; float:right;}
+
+
+.ug{
+  width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+
+.ug .left50{
+  width: 50%; float:left; clear:both; display:flex; align-items: center;
+}
+.ug .left50 .left0{
+  width: 50%; float:left;
+}
+.ug .left50 .left25{
+  width: 50%; float:right;
+}
+
+.ug .right50{
+  width: 50%; float:right; clear:both; display:flex; align-items: center;
+}
+
+.ug .right50 .right75{
+ width: 50%; float:left;}
+
+.ug .right50 .right100{
+ width: 50%; float:right;}
+
   h5 {
   font-size:20px;
   font-family: Ariel, sans-serif;
@@ -140,9 +198,69 @@ title: "About Us"
   font-size:5vw;
   font-family: Roboto, sans-serif;
   }
-  .prof .left50 img{
-  width:100px; height:200px;
+
+.prof{
+width: 100%; clear:both;  display: flex; align-items: center; padding-bottom: 20px;
 }
+.prof .left50{
+width: 50%; float:left;
+}
+.prof .right50{
+width: 50%; float:right;
+}
+.prof .left50 img{
+  width:100%; height:auto;
+}
+
+.phd{
+  width: 100%; 
+}
+
+.phd .left50{
+  width: 100%;clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+.phd .left50 .left0{
+  width: 50%; float:left;
+}
+.phd .left50 .left25{
+  width: 50%; float:right;
+}
+
+.phd .right50{
+  width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+
+.phd .right50 .right75{
+ width: 50%; float:left;}
+
+.phd .right50 .right100{
+ width: 50%; float:right;}
+
+
+.ug{
+  width: 100%; 
+}
+
+.ug .left50{
+  width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+.ug .left50 .left0{
+  width: 50%; float:left;
+}
+.ug .left50 .left25{
+  width: 50%; float:right;
+}
+
+.ug .right50{
+  width: 100%; clear:both; display:flex; align-items: center; padding-top: 20px; padding-bottom: 20px;
+}
+
+.ug .right50 .right75{
+ width: 50%; float:left;}
+
+.ug .right50 .right100{
+ width: 50%; float:right;}
+
 }
 
 </style>
