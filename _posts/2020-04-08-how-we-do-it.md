@@ -17,7 +17,7 @@ date:   2020-04-08 00:50:13
 
 <p>Using the wireless signals broadcasted by your smartphone (Bluetooth/WiFi signals broadcasted from your phone), we classify the distance to others in your surroundings and build a graph of connections. This <em>dynamic</em> graph will be updated every time you come close to another person and warns you if necessary, and also can effectively track the spread of the disease.  We will utilize unique and anonymous identifiers to track each person within our ecosystem. In other words, we <b>do not collect</b> any personal information about you. We only know you as an unique individual in our ecosystem characterized by an arbitrary identifier, but we do not know who you are, hence providing <em>privacy</em>. Furthermore, this system is <em>voluntary</em>, and you will not be tracked if you do not install our application. Finally, we have developed our platform to work on both Android and iOS devices, so that it can be deployed <em>ubiquitously</em>. </p>
 
-<p>Please checkout our <a href="https://wcsng.github.io/blubble-site/categories">Data Collection page</a> to help us in making our project a great success</p>
+<p>Please checkout our <a href="{{site.baseurl}}/categories">Data Collection page</a> to help us in making our project a great success</p>
 
 <style>
 

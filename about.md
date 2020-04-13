@@ -12,7 +12,7 @@ title: "About Us"
 <p>Recent publications from the lab in the field of wireless localization include BLoc, LocAP, DLoc and more. These publications have appeared in some of the most prestigious conferences. Notably, algorithms framed by BLoc have also been adopted in the Bluetooth standards in order to obtain fine-grained localization. Feel free to browse our <a href="https://wcsng.ucsd.edu">lab webpage</a> to know more about our lab. </p>
 
 
-<!-- <img src="https://wcsng.github.io/blubble-site/assets/res/sys_arch.png" alt="drawing" width="500"/> -->
+
 
 <!-- ##### We are members of the [WCSNG Lab](https://wcsng.ucsd.edu) (Wireless Communications Networks and Sensing), UCSD. The Lab is headed by [Prof. Dinesh Bharadia](http://web.eng.ucsd.edu/~dineshb/). We work very extensively in the field of wireless localization, which forms the very heart of this problem of contact tracing via bluetooth connections.  -->
 
@@ -66,7 +66,7 @@ title: "About Us"
 
 <div class="left50">
 	<div class="left0">
-		<img src="./assets/res/shivani.JPG" class="center" style="max-width:1242px; max-height:1656px; width:auto; height:200px"/>
+		<img src="{{site.baseurl}}/assets/res/shivani.JPG" class="center" style="max-width:1242px; max-height:1656px; width:auto; height:200px"/>
 	</div>
 	<div class="left25" >
 		<h5>Shivani Bhakta : UG Student</h5>	
@@ -76,7 +76,7 @@ title: "About Us"
 
 <div class="right50" >
 	<div class="right75">
-		<img src="./assets/res/sai.jpg" class="center" style="max-width:3024px; max-height:4032px; width:auto; height:200px"/>
+		<img src="{{site.baseurl}}/assets/res/sai.jpg" class="center" style="max-width:3024px; max-height:4032px; width:auto; height:200px"/>
 	</div>
 	<div class="right100">
 		<h5>Saikiran Komatineni: UG Student</h5>	
