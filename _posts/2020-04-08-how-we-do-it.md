@@ -2,8 +2,10 @@
 layout: post
 title:  "What sets us apart?"
 date:   2020-04-08 00:50:13
+excerpt_separator: <!--more-->
 ---
-<p>We are currently developing a robust and environment-agnostic algorithm to quantify the effectiveness of social distancing. Our aim is to automate the tedious process of contact tracing to help combat COVID-19, which involves tracking the activities of a diagnosed patient and generating a network of interaction of this patient with others. But here, we do things <b>a bit differently</b> -- instead of assigning a binary value to each interaction as a potential contact or not, we develop a spectrum of risk score to characterize each interaction. </p>
+<p>We are currently developing a robust and environment-agnostic algorithm to quantify the effectiveness of social distancing. Our aim is to automate the tedious process of contact tracing to help combat COVID-19, which involves tracking the activities of a diagnosed patient and generating a network of interaction of this patient with others. But here, we do things <b>a bit differently</b> --  <!--more--> 
+instead of assigning a binary value to each interaction as a potential contact or not, we develop a spectrum of risk score to characterize each interaction. </p>
 
 <p>We do this risk profiling by inferring the distance between two persons, by harnessing myriad of wireless signals like Bluetooth, Wi-Fi etc. Our research group is uniquely positioned to develop this system. We have built <a href="https://wcsng.ucsd.edu/localization.html">world-class algorithms</a> and are leading the development for wireless based localization and proximity detection.</p> 
 
