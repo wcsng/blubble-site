@@ -41,20 +41,17 @@
   </div>
 
   <div class="divider"></div>
-  <div class="button_sel" style="width:100%">  
-  <center>
-    <!-- <button type="button" onclick="showslides()">Click to obtain setup and install instructions</button> -->
-    <a href="{{site.baseurl}}/slides/test_123.html" class="button_css">Click to obtain setup and install instructions</a>
-  </center>
-  </div>
+  
 
 <div class="slides_container_android_android">
       <!-- <h4>Slides link for Setup/Experiment instructions</h4> -->
       <!-- <h5>Base Device: Android Phone, Mobile Device: Android Phone</h5> -->
        <!-- <div w3-include-html="./_includes/android-android.html"></div>  -->
-      <div data-include="android-android" class="android-android" style="width:70%;
-   height:5000px;
-   overflow:scroll;"></div>
+        
+  <center>
+    <!-- <button type="button" onclick="showslides()">Click to obtain setup and install instructions</button> -->
+    <a href="{{site.baseurl}}/slides/android-android.html" class="button_css">Click to obtain setup and install instructions</a>
+  </center>
       <!-- <iframe src="android-android.html" seamless></iframe> -->
 <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQBVUr4XMH60kFbBZGbRN7An-wAi41QYJtJ4uR0TVh8X2N6t7MlF7uVtOD2qT3A1W4WxBqiORg-PBg_/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -96,8 +93,10 @@
 </div>
 
 <div class="slides_container_ios_ios">
-      <h4>Slides for Setup/Experiment instructions</h4>
-      <h5>Base Device: iPhone/iPad, Mobile Device: iPhone/iPad</h5>
+      <center>
+    <!-- <button type="button" onclick="showslides()">Click to obtain setup and install instructions</button> -->
+    <a href="{{site.baseurl}}/slides/ios_ios.html" class="button_css">Click to obtain setup and install instructions</a>
+  </center>
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTEpUfIjQiTBgzxmSvL-XNDSTbJfHuo5C6S8Noj1o6z8L1BewodqmPWbOKOwJJj-IKSjcZtd74GzY2s/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
 
@@ -130,9 +129,9 @@
 prev_tx = "android";
 prev_rx = "android";
 
-function showslides(){
-  $(".slides_container_"+prev_tx+"_"+prev_rx).show();
-}
+// function showslides(){
+//   $(".slides_container_"+prev_tx+"_"+prev_rx).show();
+// }
 
 function render_slides(myRadio) {
     if(myRadio.name=="tx")
@@ -140,7 +139,7 @@ function render_slides(myRadio) {
       // alert("Changing Base Device to: "+myRadio.id)
       $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
       new_tx = myRadio.id;
-      // $(".slides_container_"+new_tx+"_"+prev_rx).show();
+      $(".slides_container_"+new_tx+"_"+prev_rx).show();
       prev_tx = new_tx;
     }
     else {
@@ -152,7 +151,7 @@ function render_slides(myRadio) {
         new_rx="android"; 
       }
       $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
-      // $(".slides_container_"+prev_tx+"_"+new_rx).show();
+      $(".slides_container_"+prev_tx+"_"+new_rx).show();
       prev_rx = new_rx;
     }
     // alert('Old value: ' + current_tx);
@@ -160,13 +159,13 @@ function render_slides(myRadio) {
     // current_tx = myRadio.id;
 }
 
-  $(function(){
-    var includes = $('[data-include]');
-    jQuery.each(includes, function(){
-      var file = '{{site.baseurl}}/slides/' + $(this).data('include') + '.html';
-      $(this).load(file);
-    });
-  });
+  // $(function(){
+  //   var includes = $('[data-include]');
+  //   jQuery.each(includes, function(){
+  //     var file = '{{site.baseurl}}/slides/' + $(this).data('include') + '.html';
+  //     $(this).load(file);
+  //   });
+  // });
 
 </script>
 
