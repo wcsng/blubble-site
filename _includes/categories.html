@@ -44,7 +44,7 @@
 
   <div class="divider"></div>
   <div class ="tx_rx_sel">
-    <button class="button_css" onclick="alertBox(this)">Please select Fixed and Mobile Device</button>
+    <button class="button_css" onclick="alertBox(this)" id="alertButton">Please select Fixed and Mobile Device</button>
   </div> 
 
 <div class="slides_container_android_android">
@@ -167,8 +167,21 @@ prev_rx = "none";
 //   $(".slides_container_"+prev_tx+"_"+prev_rx).show();
 // }
 function alertBox(){
-  this.backgroundColor = '#345465'; 
+  // this.blur();
+  if(prev_tx=="none" && prev_rx=="none"){
   alert("Please select both Mobile and Fixed devices to proceed");
+  }
+  else{
+    if(prev_tx=="none"){
+     alert("Please select Fixed device to proceed"); 
+    }
+    else{
+      if(prev_rx=="none"){
+       alert("Please select Mobile device to proceed"); 
+      }
+    }
+  }
+
 }
 function render_slides(myRadio) {
     if(myRadio.name=="tx")
@@ -177,8 +190,8 @@ function render_slides(myRadio) {
         // alert("Please Select corresponding Mobile Device as Well");
         // $(".dev_sel .right50").show();
         prev_tx = myRadio.id;
-        $(".tx_rx_sel").show();
-        $(".tx_rx_sel").update("Please Select Mobile Device on the right");
+        var fieldNameElement = document.getElementById('alertButton');
+        fieldNameElement.innerHTML = "Please select Mobile device to proceed";
       }
       else{
         // alert("Changing Fixed Device to: "+myRadio.id)
@@ -187,6 +200,7 @@ function render_slides(myRadio) {
          }
         new_tx = myRadio.id;
         // $(".tx_rx_sel").update("Showing Setup Instructions for Fixed Device: "+new_tx+" Mobile Device: "+prev_rx);
+        $(".tx_rx_sel").hide();
         $(".slides_container_"+new_tx+"_"+prev_rx).show();
         prev_tx = new_tx;
       }
@@ -195,7 +209,9 @@ function render_slides(myRadio) {
       // alert("Changing Mobile Device to: "+myRadio.id)
 
       if(prev_tx=="none"){
-        alert("Please Select corresponding Fixed Device as Well");
+        var fieldNameElement = document.getElementById('alertButton');
+        fieldNameElement.innerHTML = "Please select Fixed device to proceed";
+        // alert("Please Select corresponding Fixed Device as Well");
         curr_rx_str = myRadio.id;
         if(curr_rx_str=="android_rx"){
           new_rx="android";
@@ -216,10 +232,6 @@ function render_slides(myRadio) {
         if(prev_rx!="none"){
           $(".slides_container_"+prev_tx+"_"+prev_rx).hide();
         }
-        // var fieldNameElement = document.getElementById('tx_rx_sel');
-        // $(".tx_rx_sel").show();
-        // var txrx_msg = "<p>Showing Setup Instructions for Fixed Device: "+prev_tx+" Mobile Device: "+new_rx+"</p>";
-        // fieldNameElement.innerHTML = txrx_msg;
         $(".tx_rx_sel").hide();
         $(".slides_container_"+prev_tx+"_"+new_rx).show();
         prev_rx = new_rx;
