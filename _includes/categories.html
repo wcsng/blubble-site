@@ -32,7 +32,7 @@
     <label for="misc"> Wearables/Other Beaconing Devices</label><br>
     
   </div>
-  <div class="right50" style="width: 50%; float:right; display: none">
+  <div class="right50" style="width: 50%; float:right">
   <h5>Mobile Device</h5>
   <input type="radio" id="android_rx" name="rx" value="android_rx"  onchange="render_slides(this)" autocomplete="off">
   <label for="android_rx"> Android Phone</label><br>
@@ -43,7 +43,9 @@
   </div>
 
   <div class="divider"></div>
-  <div class ="tx_rx_sel">Please Select Mobile Device from the options on the right</div> 
+  <div class ="tx_rx_sel">
+    <button class="button_css" onclick="alertBox(this)">Please select Fixed and Mobile Device</button>
+  </div> 
 
 <div class="slides_container_android_android">
       <!-- <h4>Slides link for Setup/Experiment instructions</h4> -->
@@ -52,7 +54,7 @@
         
   <!-- <center> -->
     <!-- <button type="button" onclick="showslides()">Click to obtain setup and install instructions</button> -->
-    <a href="{{site.baseurl}}/slides/android-android.html" class="button_css">Click to obtain setup and install instructions</a>
+    <a href="{{site.baseurl}}/slides/android-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Android, Mobile Device: Android</a>
   <!-- </center> -->
       <!-- <iframe src="android-android.html" seamless></iframe> -->
 <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQBVUr4XMH60kFbBZGbRN7An-wAi41QYJtJ4uR0TVh8X2N6t7MlF7uVtOD2qT3A1W4WxBqiORg-PBg_/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
@@ -62,7 +64,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4> 
         <h5>Fixed Device: iPhone/iPad, Mobile Device: Android Phone</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/ios-android.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/ios-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: iPhone/iPad, Mobile Device: Android</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPU1466ZjEkxDmhErqvjOoAhYiWln2AayiCMrgF2Ds-vn4c8H8N7jmPTDQIGN6GOp3-_WOuKVEOFlO/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -71,7 +73,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4> 
         <h5>Fixed Device: Windows Computer, Mobile Device: Android Phone</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/win-android.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/win-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Windows Laptop, Mobile Device: Android</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQkQZiXNiWNc96OdYXOI8SPlOSaLJ7Rk84_uBZZF21xxr42S1MsYtrPjVo9pqRiETLg68sz7mwUTkL/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -80,7 +82,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
       <h5>Fixed Device: Mac Computer, Mobile Device: Android Phone</h5> -->
       <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/mac-android.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/mac-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Mac, Mobile Device: Android</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR46Lqanr5t1bRf1GsUBfJUKArNUadh9ObJ1mWQGhqoabLGb9o9y53NoA0Ju7SG4mv7BpnVnqt-aHYd/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -89,7 +91,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
       <h5>Fixed Device: Linux Computer, Mobile Device: Android Phone</h5> -->
       <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/linux-android.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/linux-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Linux, Mobile Device: Android</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQTQYzdkCnIAOcQjKEWbTO6lPm2lFaK_1uIMBJ8ZL_4soSlNu8-Y-UwHCj4aDqK31qQlpj9sikzblPe/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -98,7 +100,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
         <h5>Fixed Device: Wearables/Misc, Mobile Device: Android</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/misc-android.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/misc-android.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Wearables, Mobile Device: Android</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgz8GxK0evlKnK7GqiU0hyhm9tPaCJIgo0_tWhvyFdc36tN22-YuL2ZgxnuZRWzYUHFIR2hSxBZ0J_/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -107,7 +109,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
         <h5>Fixed Device: Android Phone, Mobile Device: iPhone/iPad</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/android-ios.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/android-ios.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Android, Mobile Device: iPad/iPhone</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRbbvImrMP3mXNuvMV5F8j7AN4VvLn79ahNDIDprjCpKdFkB2DQOZOiak8hWYfGlZwNrSutHAkyJvty/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -115,7 +117,7 @@
 <div class="slides_container_ios_ios">
       <!-- <center> -->
     <!-- <button type="button" onclick="showslides()">Click to obtain setup and install instructions</button> -->
-    <a href="{{site.baseurl}}/slides/ios-ios.html" class="button_css">Click to obtain setup and install instructions</a>
+    <a href="{{site.baseurl}}/slides/ios-ios.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: iPad/iPhone, Mobile Device: iPad/iPhone</a>
   <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTEpUfIjQiTBgzxmSvL-XNDSTbJfHuo5C6S8Noj1o6z8L1BewodqmPWbOKOwJJj-IKSjcZtd74GzY2s/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -124,7 +126,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
         <h5>Fixed Device: Windows Computer, Mobile Device: iPhone/iPad</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/win-ios.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/win-ios.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Windows Laptop, Mobile Device: iPad/iPhone</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJvbiHWwQLuWEP2ZwwzCDOw05DJSgk-LxnnOOUljaqjLwZXdN2p8uEwyD-VcgzLpZPTk-MwlR2UBYp/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -133,7 +135,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
         <h5>Fixed Device: Mac Computer, Mobile Device: iPhone/iPad</h5> -->
         <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/mac-ios.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/mac-ios.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Mac, Mobile Device: iPad/iPhone</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8QV7ni4gK7jRNkXgKUmylcv37z_TA5vSLa_wPtRX0nlD5DoU14_rBO7JRKBBgbjuWyGXwf6meMhM6/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -151,7 +153,7 @@
       <!-- <h4>Slides for Setup/Experiment instructions</h4>
       <h5>Fixed Device: Wearables/Misc, Mobile Device: iPhone/iPad</h5> -->
       <!-- <center> -->
-        <a href="{{site.baseurl}}/slides/misc-ios.html" class="button_css">Click to obtain setup and install instructions</a>
+        <a href="{{site.baseurl}}/slides/misc-ios.html" class="button_css">Click to obtain setup and install instructions for Fixed Device: Wearables, Mobile Device: iPad/iPhone</a>
         <!-- </center> -->
       <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6ive7tRdsklv5whW-vwyVszcApBx8OaE4MhlCdI97CLaFNmkJi-OqE5VrlYSt_ujwjDdEVEByGKfK/embed?start=false&loop=true&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 </div>
@@ -164,13 +166,16 @@ prev_rx = "none";
 // function showslides(){
 //   $(".slides_container_"+prev_tx+"_"+prev_rx).show();
 // }
-
+function alertBox(){
+  this.backgroundColor = '#345465'; 
+  alert("Please select both Mobile and Fixed devices to proceed");
+}
 function render_slides(myRadio) {
     if(myRadio.name=="tx")
     {
       if(prev_rx=="none"){
         // alert("Please Select corresponding Mobile Device as Well");
-        $(".dev_sel .right50").show();
+        // $(".dev_sel .right50").show();
         prev_tx = myRadio.id;
         $(".tx_rx_sel").show();
         $(".tx_rx_sel").update("Please Select Mobile Device on the right");
@@ -294,7 +299,6 @@ function render_slides(myRadio) {
   .tx_rx_sel {
     font-size:18px;
     font-family: Roboto, sans-serif;
-    display: none;
   }
   
   .button_sel button {
@@ -422,7 +426,6 @@ function render_slides(myRadio) {
   .tx_rx_sel {
     font-size:3vw;
     font-family: Roboto, sans-serif;
-    display: none;
   }
 
   .overview-vid {
